@@ -35,7 +35,7 @@ jobs:
 
       - name: Run Docker container
         run: |
-          docker run -d -p 3000:3000 --name aws-reactjs-app-container \
+          docker run -d -p 3006:3006 --name aws-reactjs-app-container \
             -e VITE_API_BASE_URL="${{ secrets.VITE_API_BASE_URL }}" \
             ${{ secrets.DOCKER_USERNAME }}/react-upload-file:latest
 
